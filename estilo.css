@@ -6,6 +6,7 @@
 
     --mainText: black;
     --secondaryText: #4b5156;
+    --shadowColor:5px 5px 15px 5px rgba(0,0,0,0.76);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -50,9 +51,34 @@ html, body {
 
 .greeting-wrapper {
     display: grid;
-    justify-content: center;
-    min-height: 20em;
-    border: 2px dashed lightcoral;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border-radius: 5px 5px 0 0;
+    box-shadow: var(--shadowColor);
+    -webkit-box-shadow: var(--shadowColor); 
+    box-shadow: var(--shadowColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em; 
+    grid-template-areas: 
+    'nav-wrapper nav-wrapper'
+    'left-column right-column';
+}
+
+.nav-wrapper {
+    grid-area: nav-wrapper;
+}
+
+.left-column {
+    grid-area: left-column;
+}
+.right-column {
+    grid-area: right-column;
 }
 
 @media screen and (max-width: 1200px){
