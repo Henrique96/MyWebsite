@@ -6,7 +6,7 @@
 
     --mainText: black;
     --secondaryText: #4b5156;
-    --shadowColor:5px 5px 15px 5px rgba(0,0,0,0.76);
+    --shadowColor:3px 3px 10px 3px rgba(0,0,0,0.76);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -63,7 +63,6 @@ html, body {
     box-shadow: var(--shadowColor);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em; 
     grid-template-areas: 
     'nav-wrapper nav-wrapper'
     'left-column right-column';
@@ -121,6 +120,30 @@ html, body {
 .left-column {
     grid-area: left-column;
 }
+
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;background-color: black;
+
+    -webkit-box-shadow: var(--shadowColor); 
+    box-shadow: var(--shadowColor);
+
+    cursor: pointer;
+
+    margin: 5px;
+}
+
 .right-column {
     grid-area: right-column;
 }
