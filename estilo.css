@@ -7,6 +7,8 @@
     --mainText: black;
     --secondaryText: #4b5156;
     --shadowColor:3px 3px 10px 3px rgba(0,0,0,0.76);
+
+    --themeDotColor: #24292e;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -131,17 +133,51 @@ html, body {
     border: 2px solid var(--borderColor);
 }
 
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .theme-dot{
     height: 30px;
     width: 30px;
-    border-radius: 50%;background-color: black;
+    border-radius: 50%;
+    background-color: black;
 
     -webkit-box-shadow: var(--shadowColor); 
     box-shadow: var(--shadowColor);
 
     cursor: pointer;
 
+    border: 2px solid var(--themeDotColor);
+
     margin: 5px;
+}
+
+.theme-dot:hover {
+    border-width: 5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode{
+    background-color: blue;
+}
+
+#green-mode{
+    background-color: green;
+}
+
+#purple-mode{
+    background-color: purple;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column {
