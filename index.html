@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="blue.css" id="theme-style" type="text/css">
 </head>
 
 <body>
@@ -39,10 +41,10 @@
                     <img id="profile_pic" src="imgs/eu.jpg">
                     <h5 style="text-align: center; line-height: 0;">Personalize o tema</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">***A configuração do tema vai ficar salvo para <br> a sua próxima visita</p>
@@ -105,9 +107,12 @@
 
                     <h3>Me chame no Linkedin e Whatsapp</h3>
 
-                    <a target="_blank" href="https://www.linkedin.com/in/matheus-viana-a151b9198/"><b><img align="center" alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></b></a>
-                    <br> <br>   
-                    <a target="_blank" href="https://wa.me/5551985618337"><b> <img align="center" alt="Whatsapp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></b></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/matheus-viana-a151b9198/"><b><img
+                                align="center" alt="Linkedin"
+                                src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></b></a>
+                    <br> <br>
+                    <a target="_blank" href="https://wa.me/5551985618337"><b> <img align="center" alt="Whatsapp"
+                                src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></b></a>
                 </div>
             </div>
         </div>
@@ -185,6 +190,8 @@
             </form>
         </div>
     </section>
+
+    <script src="script.js" type="text/javascript"></script>
 
 </body>
 
