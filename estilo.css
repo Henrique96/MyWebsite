@@ -2,12 +2,12 @@
     --mainColor:#15202B;
     --secondaryColor:#192734;
 
-    --borderColor: #164D56;
+    --borderColor: #15202B;
 
     --mainText: #fff;
     --secondaryText: #eeeeee;
 
-    --themeDotColor: ##FFF;
+    --themeDotColor: #FFF;
 
     --previewBg:rgb(25, 39, 52, 0.8);
     --previewShadow: #111921;
@@ -91,14 +91,21 @@ html, body {
 }
 
 #navigation{
-    margin: 0px;
-    padding: 10px;
+    float: right;
+    margin: 10px;
+    width: 25px;
+    height: 15px;
+    padding: 0px;
+    border-radius: 50%;
+    border: var(--borderColor) solid 2px;
+    background-color: #6b0202;
 }
 
 #navigation li {
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
+
 }
 
 #navigation a{
@@ -158,7 +165,7 @@ html, body {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #15202B;
 
     -webkit-box-shadow: var(--shadowColor); 
     box-shadow: var(--shadowColor);
@@ -175,19 +182,19 @@ html, body {
 }
 
 #light-mode{
-    background-color: #fff;
+    background-color: #ebebeb;
 }
 
 #blue-mode{
-    background-color: #270c9c;
+    background-color: #15202B;
 }
 
 #green-mode{
-    background-color: green;
+    background-color: #5f6756;
 }
 
 #purple-mode{
-    background-color: purple;
+    background-color: #46344E;
 }
 
 #settings-note{
