@@ -1,9 +1,9 @@
-console.log('Funcionando')
+// Armazena Tema selecionado
 
 let theme = localStorage.getItem('theme')
 
 if (theme == null) {
-    setTheme('light')
+    setTheme('estilo')
 } else {
     setTheme(theme)
 }
@@ -19,6 +19,10 @@ for (var i = 0; themeDots.length > i; i++) {
 }
 
 function setTheme(mode) {
+
+    if (mode == 'estilo') {
+        document.getElementById('theme-style').href = 'estilo.css';
+    }
 
     if (mode == 'light') {
         document.getElementById('theme-style').href = 'light.css';
