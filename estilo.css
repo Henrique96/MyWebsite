@@ -94,11 +94,13 @@ html, body {
     float: right;
     margin: 10px;
     width: 25px;
-    height: 15px;
+    height: 25px;
     padding: 0px;
     border-radius: 50%;
     border: var(--borderColor) solid 2px;
-    background-color: #6b0202;
+    background-color: #d10d1d; 
+    align-content: center;
+    justify-content: center;
 }
 
 #navigation li {
