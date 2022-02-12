@@ -56,15 +56,14 @@ html, body {
 }
 
 .main-container{
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 
 .greeting-wrapper {
     display: grid;
-    text-align: center;
-    align-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: -20px;
 }
 
 .intro-wrapper {
@@ -141,9 +140,8 @@ html, body {
 
 .left-column {
     grid-area: left-column;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
+    align-content: center;
+    justify-content: center;
 }
 
 #profile_pic{
@@ -152,6 +150,7 @@ html, body {
 
     height: 200px;
     width: 200px;
+    margin-top: 30px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
 }
